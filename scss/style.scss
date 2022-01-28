@@ -4,75 +4,60 @@
   display: flex;
   flex-direction: column;
   flex: 1 1 auto;
-  align-items: center;
   min-height: 100%;
   background-color: rgb(28, 30, 51);
   overflow: hidden;
 }
+$imageSize: 640px;
 .content {
   margin: 0 200px;
-  max-width: 1800px;
+  max-width: 2560px;
 }
 body {
   color: #37b6ce;
 }
 body img {
-  max-width: 640px;
-}
-.block-greetings {
-  // .block-greetings__row
-
-  &__row {
-  }
-
-  // .block-greetings__left
-
-  &__left {
-  }
-
-  // .block-greetings__title
-
-  &__title {
-  }
-
-  // .block-greetings__text
-
-  &__text {
-  }
-
-  // .block-greetings__right
-
-  &__right {
-  }
+  max-width: $imageSize;
 }
 .title {
   font-size: 24px;
+  font-weight: 700;
+  font-style: italic;
 }
 .text {
   font-size: 18px;
 }
-.block-info {
-  // .block-info__title
-
-  &__title {
-  }
-
-  // .block-info__row
-
+.block-greetings {
   &__row {
+    display: flex;
   }
-
-  // .block-info__left
 
   &__left {
   }
 
-  // .block-info__right
+  &__title {
+  }
+
+  &__text {
+  }
+
+  &__right {
+    flex: 1 1 auto;
+  }
+}
+.block-info {
+  &__title {
+  }
+
+  &__row {
+    display: flex;
+  }
+
+  &__left {
+  }
 
   &__right {
   }
-
-  // .block-info__text
 
   &__text {
   }
@@ -150,8 +135,10 @@ body img {
   background-color: rgb(23, 55, 65);
 
   &__row {
+    max-width: 210px;
+    margin: 0 auto;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
   }
 
@@ -159,8 +146,5 @@ body img {
     max-width: 50px;
     border: 1px solid black;
     border-radius: 50%;
-  }
-
-  &__text {
   }
 }
