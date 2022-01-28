@@ -1,12 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
 @import 'nullstyle.scss';
 .wrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  align-items: center;
+  min-height: 100%;
   background-color: rgb(28, 30, 51);
+  overflow: hidden;
 }
 .content {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
   margin: 0 200px;
   max-width: 1800px;
 }
@@ -143,20 +146,20 @@ body img {
   }
 }
 .footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   border-top: 2px solid rgb(11, 227, 235);
   background-color: rgb(23, 55, 65);
-  // .footer__image
+
+  &__row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
   &__image img {
     max-width: 50px;
     border: 1px solid black;
     border-radius: 50%;
   }
-
-  // .footer__text
 
   &__text {
   }
