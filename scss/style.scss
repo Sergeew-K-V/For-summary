@@ -9,6 +9,7 @@
   overflow: hidden;
 }
 $imageSize: 640px;
+
 .content {
   margin: 0 200px;
   max-width: 2560px;
@@ -16,33 +17,58 @@ $imageSize: 640px;
 body {
   color: #37b6ce;
 }
-body img {
-  max-width: $imageSize;
-}
+
 .title {
-  font-size: 24px;
+  font-size: 30px;
   font-weight: 700;
   font-style: italic;
+  text-align: center;
+  margin-top: 20px;
 }
 .text {
-  font-size: 18px;
+  font-size: 24px;
+  margin-top: 10px;
 }
 .block-greetings {
+  position: relative;
+  margin-top: 100px;
   &__row {
     display: flex;
+    justify-content: space-between;
   }
 
   &__left {
+    flex: 1 1 50%;
   }
 
   &__title {
+    font-size: 36px;
+    font-weight: 700;
+    font-style: italic;
   }
 
   &__text {
+    line-height: 1.5;
+    position: relative;
+    li::before {
+      content: '';
+      position: absolute;
+      width: 5px;
+      height: 5px;
+      margin: 15px 0 0 -10px;
+      border-radius: 50%;
+      background-color: #37b6ce;
+    }
   }
 
   &__right {
-    flex: 1 1 auto;
+    border: 1px solid #37b6ce;
+    margin: 10px 10px 0 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    flex: 1 1 50%;
   }
 }
 .block-info {
@@ -50,13 +76,24 @@ body img {
   }
 
   &__row {
+    margin-top: 20px;
+
     display: flex;
+    justify-content: space-between;
   }
 
   &__left {
+    border: 1px solid #37b6ce;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    flex: 1 1 50%;
   }
 
   &__right {
+    margin-left: 20px;
+    flex: 1 1 50%;
   }
 
   &__text {
@@ -135,7 +172,7 @@ body img {
   background-color: rgb(23, 55, 65);
 
   &__row {
-    max-width: 210px;
+    max-width: 260px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
