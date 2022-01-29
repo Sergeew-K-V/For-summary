@@ -306,9 +306,9 @@ body {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 50%;
             flex: 1 1 50%;
+    margin-top: 5px;
   }
   .block-info__right {
-    margin-left: 20px;
     -webkit-box-flex: 1;
         -ms-flex: 1 1 50%;
             flex: 1 1 50%;

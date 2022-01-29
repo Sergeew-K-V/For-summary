@@ -183,10 +183,10 @@ body {
       height: 100%;
       object-fit: cover;
       flex: 1 1 50%;
+      margin-top: 5px;
     }
 
     &__right {
-      margin-left: 20px;
       flex: 1 1 50%;
     }
   }
