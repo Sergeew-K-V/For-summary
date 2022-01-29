@@ -104,24 +104,30 @@ h6 {
 }
 
 .content {
-  margin: 0 auto;
+  margin: 0 50px;
   max-width: 2560px;
 }
 
 @media (max-width: 1200px) {
   .content {
+    margin: 0 115px;
     max-width: 970px;
   }
 }
 
 @media (max-width: 992px) {
   .content {
+    margin: 0 auto;
     max-width: 750px;
+  }
+  .row {
+    margin: 0 10px;
   }
 }
 
 @media (max-width: 757px) {
   .content {
+    margin: 0 auto;
     max-width: none;
   }
   .text {
@@ -232,7 +238,7 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin: 0 10px;
+    margin: 0 20px;
   }
   .block-greetings__left {
     -webkit-box-flex: 1;
@@ -284,7 +290,7 @@ body {
 
 @media (max-width: 757px) {
   .block-info__row {
-    margin: 0 10px;
+    margin: 0 20px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -364,7 +370,7 @@ body {
 
 @media (max-width: 757px) {
   .block-columns__row {
-    margin-top: 20px;
+    margin: 20px 20px 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
