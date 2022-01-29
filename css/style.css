@@ -316,6 +316,21 @@ body {
   border: 1px solid #37b6ce;
   border-radius: 10px;
   margin-bottom: 10px;
+  -webkit-transition: background-color 0.2s ease-in 0s;
+  transition: background-color 0.2s ease-in 0s;
+  -webkit-transition: -webkit-box-shadow 0.2s ease-in 0s;
+  transition: -webkit-box-shadow 0.2s ease-in 0s;
+  transition: box-shadow 0.2s ease-in 0s;
+  transition: box-shadow 0.2s ease-in 0s, -webkit-box-shadow 0.2s ease-in 0s;
+  -webkit-transition: border 0.2s ease-in 0s;
+  transition: border 0.2s ease-in 0s;
+}
+
+.item__btn:hover {
+  background-color: #292828;
+  border: 3px solid #37b6ce;
+  -webkit-box-shadow: 2px -2px 2px #37b6ce;
+          box-shadow: 2px -2px 2px #37b6ce;
 }
 
 .footer {
